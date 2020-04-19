@@ -1,4 +1,4 @@
-package cn.niko.wink.auth;
+package cn.niko.wink.auth.api.pojo;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

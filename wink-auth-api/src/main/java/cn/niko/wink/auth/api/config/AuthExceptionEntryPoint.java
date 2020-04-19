@@ -1,6 +1,6 @@
 package cn.niko.wink.auth.api.config;
 
-import cn.niko.wink.auth.BaseResponse;
+import cn.niko.wink.auth.api.pojo.BaseResponse;
 import cn.niko.wink.auth.util.JsonUtils;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.http.HttpStatus;
