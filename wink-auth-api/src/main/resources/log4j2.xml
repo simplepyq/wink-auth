@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="30">
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread] [%c] - %msg%n"/>
+    </Console>
+    
+    <RollingFile name="RollingFile" fileName="E:/logs/wink-auth-api.log"
+        filePattern="E:/logs/wink-auth-api-%d{yyyy-MM-dd}.log.gz" ignoreExceptions="false">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread] [%c] - %msg%n"/>
+      <TimeBasedTriggeringPolicy />
+    </RollingFile>
+  </Appenders>
+
+  <Loggers>
+    <Logger name="EventLogger" level="INFO" additivity="false">
+      <AppenderRef ref="RollingFile"/>
+    </Logger>
+    <Root level="DEBUG">
+      <AppenderRef ref="Console"/>
+      <AppenderRef ref="RollingFile"/>
+    </Root>
+  </Loggers>
+</Configuration>
