@@ -25,3 +25,7 @@
 hs_err_pid*
 
 .idea
+wink-auth-api/wink-auth-api.iml
+wink-auth-sql/wink-auth-sql.iml
+wink-auth-util/wink-auth-util.iml
+wink-auth.iml
